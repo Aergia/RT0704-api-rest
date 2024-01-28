@@ -8,23 +8,14 @@
     </head>
 <body>
 
-<form action="/action_page.php">
+<form action="http://localhost:8001/login" method="post">
   <div class="container">
     <h1>Sign in</h1>
-    <p>Please fill in this form to sign in.</p>
-    <hr>
 
     <label for="email"><b>Username</b></label>
     <input type="text" placeholder="Username" name="username" id="username" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Password" name="password" id="password" required>
-
-    <button type="submit" class="register">Sign in</button>
-  </div>
-  
-  <div class="container signin">
-    <p>New here ? <a href="../register">Register</a>.</p>
+    <button type="submit" class="register">Load</button>
   </div>
 </form>
 
