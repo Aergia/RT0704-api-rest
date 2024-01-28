@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidéothèque</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1>Vidéothèque</h1>
+    <table>
+        <tbody>
+            {% for films in films %}
+                <tr>
+                    <td><img></td>
+                    <td>
+                        <tr>
+                            <td>{{ films }}</td>
+                        </tr>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+<br>
+</html>
